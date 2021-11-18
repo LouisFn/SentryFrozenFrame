@@ -1,11 +1,13 @@
 package com.example.sentryslowframe
 
 import android.app.Application
+import android.util.Log
 import io.sentry.Sentry
 import io.sentry.SentryLevel
 import io.sentry.android.core.SentryAndroid
 import io.sentry.android.fragment.FragmentLifecycleIntegration
 import io.sentry.protocol.User
+import kotlin.random.Random
 
 class MyApplication : Application() {
 
@@ -39,7 +41,7 @@ class MyApplication : Application() {
         }
 
         Sentry.setUser(User().apply {
-            username = "TestSentry"
+            username = "MyUsername"
         })
     }
 

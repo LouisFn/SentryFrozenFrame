@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.example.sentryslowframe"
         minSdk 24
-        targetSdk 30
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -46,4 +46,7 @@ dependencies {
     implementation "io.sentry:sentry-android:5.3.0"
     implementation "io.sentry:sentry-android-fragment:5.3.0"
     implementation "io.sentry:sentry-android-okhttp:5.3.0"
+
+    implementation "androidx.work:work-runtime-ktx:2.7.1"
+
 }
